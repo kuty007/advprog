@@ -23,7 +23,7 @@ MyShell is a simple shell implementation written in C++, providing basic command
 
 ### Compilation
 
-Compile the code using a C++ compiler. For example, using g++:
+Compile the code using a C++ compiler. For example:
 
 ```bash
 - make 
@@ -49,13 +49,13 @@ Run the compiled executable:
 
 - **`$?`**: Returns the exit status of the previous command. For example `echo $?` It allows you to check whether the last command was successful or not.
 
-- **`!!`**: Reruns the previous command. Typing `!!` in the prompt will execute the same command as before.
+- **`!!`**: Retruns the previous command. Typing `!!` in the prompt will execute the same command as before.
 
 - **`cd`**: Navigates through the file system. Use `cd /path/to/directory` to change the current working directory.
 
 - **`quit`**: Exits the shell. Typing `quit` will terminate the prompt.
 
-- **`^c`**: Stops a process midway. Pressing Ctrl+C in the terminal interrupts the currently running process.
+- **`^c`**: Stops a process midway. Pressing Ctrl+C in the terminal interrupts the currently running process. However, it won't terminate the prompt, instead, it returns the message "You Typed Control-C!".
 
 - **`pipe`**: Pipes commands together to pass the output of one command as input to another. For example, `command1 | command2` chains the output of `command1` to `command2`.
 
@@ -63,7 +63,7 @@ Run the compiled executable:
 
 - **`read`**: Reads and stores user input into saved variables. Use `read variable_name` to prompt the user for input and store it in `variable_name`.
 
-- **`echo $var`**: Prints the following variable in the terminal. For example, `echo $name!` will display "John" in the terminal.
+- **`echo $var`**: Prints the following variable in the terminal. For example, `echo $name` will display "John" in the terminal.
 
 - **`if/else`**: Creates conditional flows in the terminal. Use the `if` statement to conditionally execute commands based on a specified condition. For example:
 
