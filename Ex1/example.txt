@@ -1,0 +1,97 @@
+Ex1 - Example # 1 :
+
+goldi@ubuntu:~/Desktop/My_Projects/Adv_Prog/Ex1$ ./myshell
+hello: date >> myfile
+hello: cat myfile
+Wed Feb 28 01:00:11 AM PST 2024
+hello: date -u >> myfile
+hello: cat myfile
+Wed Feb 28 01:00:11 AM PST 2024
+Wed Feb 28 09:00:21 AM UTC 2024
+hello: wc -l < myfile
+2
+hello: prompt = hi:
+hi: mkdir mydir
+hi: cd mydir
+hi: pwd
+/home/goldi/Desktop/My_Projects/Adv_Prog/Ex1/mydir
+hi: touch file1 file2 file3
+hi: ls
+file1  file2  file3
+hi: !!
+file1  file2  file3
+hi: echo abc xyz
+abc xyz
+hi: ls
+file1  file2  file3
+hi: echo $?
+0
+hi: ls no_such_file
+ls: cannot access 'no_such_file': No such file or directory
+hi: echo $?
+2
+hi: ls no_such_file 2> file
+You typed Control-C!
+hi:: cat > color.txt
+blue
+black
+red
+red
+green
+blue
+green
+red
+red
+blue
+hi: cat color.txt
+blue
+black
+red
+red
+green
+blue
+green
+red
+red
+blue
+hi: cat color.txt | cat | cat | cat
+blue
+black
+red
+red
+green
+blue
+green
+red
+red
+blue
+hi: sort color.txt | uniq -c | sort -r | head -3
+      4 red
+      3 blue
+      2 green
+hi: quit
+goldi@ubuntu:~/Desktop/My_Projects/Adv_Prog/Ex1$ 
+
+
+Ex1 - Example # 2 :
+
+
+goldi@ubuntu:~/Desktop/My_Projects/Adv_Prog/Ex1$ ./myshell
+hello: if ls | grep myshell
+> then
+> echo yes
+> else
+> echo no
+> fi
+yes
+hello: read haim
+> its me
+hello: echo $haim
+its me
+hello: $asaf = its you
+hello: echo $asaf
+its you
+hello: echo $arkady
+
+hello: quit
+
