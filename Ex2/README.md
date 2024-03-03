@@ -21,7 +21,7 @@ This assumes you have the make utility installed on your system.
 To run the program with the naive prime counter implementation, use:
 
 ```bash
-./randomGenerator 7 1000 | ./myPrimeCounter
+./randomGenerator 7 1000 | ./PrimeCounter
 ```
 
 This command uses a naive implementation for prime counting. Be aware that the naive implementation may not be as efficient for large data streams.
