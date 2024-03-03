@@ -96,7 +96,7 @@ To visually substantiate the performance difference, refer to the attached image
 
 ![Memory Usage](https://github.com/haimgoldfisher/Adv_Prog/blob/main/Ex2/X10_than_primeCounter.jpg?raw=true)
 We achieved this time using 5 threads and chunks of size 2000000
-for bigger input טou can adjust the number of threads to the capabilities of your computer (The number of cores).
+for bigger input you can adjust the number of threads to the capabilities of your computer (The number of cores).
 
 ## Memory Usage Verification
 
